@@ -60,6 +60,7 @@
 	  <None Remove="Resources\AppIcon\univ.jpg" />
 	  <None Remove="Resources\Images\coeur.svg" />
 	  <None Remove="Resources\Images\comment.svg" />
+	  <None Remove="Resources\Images\favorite.svg" />
 	  <None Remove="Resources\Images\hourglass.svg" />
 	  <None Remove="Resources\Images\image.jpg" />
 	  <None Remove="Resources\Images\magnifying.svg" />
