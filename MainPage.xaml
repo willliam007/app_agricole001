@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AGriUniv.MainPage"
+             >
+
+    <Shell.TitleView >
+        <Grid Padding="15"
+              ColumnDefinitions="100*,auto,0*"
+              RowDefinitions="auto">
+            <FlexLayout JustifyContent="SpaceAround">
+                <Label Text="AgriUniv"
+                       HorizontalTextAlignment="Center"
+                       FontAttributes="Bold"
+                       FontFamily="Roboto"
+                       FontSize="16">
+                    
+                </Label>
+                 <!--<Image Source="home.png"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        Aspect="AspectFill"
+                        HeightRequest="20"
+                        WidthRequest="20"/>-->
+                
+            <Image Source="dotnet_bot.png"
+                   HorizontalOptions="End"
+                   VerticalOptions="End"
+                   Aspect="AspectFill"
+                   HeightRequest="25"
+                   WidthRequest="25" />
+            
+            </FlexLayout>
+            
+           
+        </Grid>
+    </Shell.TitleView>
+
+
+
+
+    <Grid>
+
+
+     
+        <ScrollView>
+
+
+            <Grid>
+                <CollectionView>
+                    <CollectionView.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>image.jpg</x:String>
+                            <x:String>home.png</x:String>
+                            <x:String>share.png</x:String>
+                            <x:String>image.jpg</x:String>
+                            <x:String>image.jpg</x:String>
+                            <x:String>image.jpg</x:String>
+                        </x:Array>
+                    </CollectionView.ItemsSource>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate >
+                            <Grid>
+                                <StackLayout HeightRequest="500"  Spacing="18">
+                                    <Grid HeightRequest="45" VerticalOptions="Start" >
+
+                                        <Border></Border>
+
+                                        <StackLayout VerticalOptions="Start">
+                                            <HorizontalStackLayout  HorizontalOptions="Start" Margin="2">
+                                                <Frame CornerRadius="120" 
+                             WidthRequest="40.5" 
+                             HeightRequest="40" 
+                             BorderColor="Purple" 
+                             Margin="2" 
+                             Padding="2">
+                                                    <Image Source="image.jpg" Aspect="Fill"
+                         HeightRequest="41"
+                         WidthRequest="39"/>
+                                                </Frame>
+                                                <!--ce grid si c'est pour mettre de l'espace entre le nom et l'icone-->
+                                                <Grid HorizontalOptions="End" 
+                          HeightRequest="10"
+                            WidthRequest="10">
+                                                    <Label Text="  . "/>
+                                                </Grid>
+                                                <Label Text="Tabaki"
+                             FontAttributes="Bold"
+                             FontFamily=""></Label>
+                                            </HorizontalStackLayout>
+                                        </StackLayout>
+
+                                        <FlexLayout  HorizontalOptions="End" 
+                       BackgroundColor="Transparent"
+                       WidthRequest="200"
+                       AlignContent="End">
+                                       
+                                            <Grid></Grid>
+                                            <HorizontalStackLayout  VerticalOptions="StartAndExpand"
+                                      HorizontalOptions="Start"
+                                      Margin="82,0,0,10">
+                                                <Grid Margin="2"
+                        Padding="0"  
+                      >
+                                                    <Border Stroke="Transparent"
+                              StrokeThickness="2"
+                              Background="Transparent"
+                              VerticalOptions="Center"
+                              HorizontalOptions="End">
+                                                        <Border.StrokeShape>
+                                                            <RoundRectangle >
+
+                                                            </RoundRectangle>
+                                                        </Border.StrokeShape>
+                                                        <Image Source="plus.png"
+                                     Aspect="AspectFit"
+                                     Rotation="50"
+                                     HeightRequest="27"
+                                     WidthRequest="21">
+
+                                                        </Image>
+                                                        <!--<Label Text="william" VerticalOptions="Center"
+                                  HorizontalOptions="Center"
+                                  FontSize="14"
+                                  HeightRequest="20"
+                                  WidthRequest="60"  
+                                  FontAttributes="Bold"/>-->
+                                                    </Border>
+
+                                                </Grid>
+                                            </HorizontalStackLayout>
+                                        </FlexLayout>
+
+                                    </Grid >
+
+
+
+
+                                    <Label HorizontalOptions="Center" Text="bonjour tout le monde je voici le resultat de ma recolte"></Label>
+
+                                    <StackLayout HorizontalOptions="End" VerticalOptions="Center">
+                                        <Image Source="image.jpg" Aspect="AspectFill" HeightRequest="350"  />
+                                        <Border Stroke="AliceBlue"
+                      StrokeThickness="1">
+
+                                        </Border>
+
+                                        <Border Stroke="Gray">
+
+                                            <HorizontalStackLayout VerticalOptions="Start" HeightRequest="30" WidthRequest="460"  >
+
+                                                <FlexLayout HeightRequest="22" JustifyContent="SpaceAround"
+                                        
+                                        Margin="7"
+                                        Padding="0">
+                                                    <Image 
+                                            HorizontalOptions="Start"
+                                            VerticalOptions="Center"
+                                            WidthRequest="20"
+                                            HeightRequest="20" Source="coeur.png">
+
+
+                                                    </Image>
+                                                    
+
+                                                    <Label  VerticalOptions="Center"
+                                               FontSize="12" FontAttributes="None"
+                                               HorizontalOptions="Center" 
+                                               Text="  j'aime" >
+
+                                                    </Label>
+
+
+                                                    <!--ici c'es le code pour separer le bouton j'aime et commentaire-->
+
+
+                                                    <Grid HorizontalOptions="End" HeightRequest="10"
+                                                  WidthRequest="10">
+                                                        <Label Text="  . "/>
+                                                    </Grid>
+
+                                                    <Grid HorizontalOptions="Start" 
+                                              HeightRequest="5" 
+                                              VerticalOptions="Center">
+                                                        <Image 
+                                             HorizontalOptions="Start"
+                                             VerticalOptions="Start"
+                                             WidthRequest="20"
+                                             
+                                                RotationX="10"
+                                                RotationY="360"
+                                             HeightRequest="20" Source="comment.png">
+
+                                                        </Image>
+
+                                                    </Grid>
+                                                    <Label Text="  Commenter"
+                                                     TextColor="Black"
+                                                     HorizontalOptions="Center"
+                                                     FontAttributes="None"
+                                                     FontSize="12"
+                                                     VerticalOptions="Center">
+
+                                                    </Label>
+                                                </FlexLayout>
+
+                                            </HorizontalStackLayout>
+                                        </Border>
+
+                                        <Border Stroke="Gray"
+                                 StrokeThickness="2.5">
+
+                                        </Border>
+
+                                        <!--<Image Source="image.jpg" Aspect="AspectFill" HeightRequest="200"  />-->
+
+                                        <HorizontalStackLayout VerticalOptions="Start">
+                                            <VerticalStackLayout>
+
+                                            </VerticalStackLayout>
+                                        </HorizontalStackLayout>
+                                    </StackLayout>
+
+                                </StackLayout>
+
+
+                            </Grid>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </Grid>
+
+
+        </ScrollView>
+
+    </Grid>
+
+   
+
+
+</ContentPage>

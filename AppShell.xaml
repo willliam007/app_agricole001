@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="AGriUniv.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:AGriUniv"
+    xmlns:Views="clr-namespace:AGriUniv.Views"
+    Shell.FlyoutBehavior="Flyout"
+    Shell.FlyoutIcon="user.png"
+    Shell.BackgroundColor="#ddd"
+    >
+
+    <TabBar>
+        <ShellContent
+         
+            Icon="home.png"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+        <ShellContent
+        Title="Message"
+            Icon="message.png"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+        <ShellContent
+        Title="MarketPlace"
+            Icon="market.png"
+        ContentTemplate="{DataTemplate Views:MarketPlace}"
+        Route="MainPage" />
+        <ShellContent
+        Title="Menu"
+            Icon="menu.png"
+        ContentTemplate="{DataTemplate Views:Menu}"
+        Route="MainPage" />
+        
+
+    </TabBar>
+    
+
+   
+</Shell>

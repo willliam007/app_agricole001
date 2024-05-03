@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "448105268868",
+    "project_id": "agriuniv-eacff",
+    "storage_bucket": "agriuniv-eacff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:448105268868:android:d68fee23da56500cc564d1",
+        "android_client_info": {
+          "package_name": "com.company.AGriUniv"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCciOgZqRjuJAB49UZG4ZF5mPJoZkh1Z_s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
